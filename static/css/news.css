@@ -1,0 +1,50 @@
+#section {
+    width: 80%;
+    min-width: 780px;
+    margin: 0 auto;
+}
+/* 新闻中心标题 */
+.news-title {
+    font-family:'Kaushan Script';
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #82BDE5;
+}
+.news-title span {
+    margin-left: 20px;
+}
+/* 每个新闻框样式 */
+.news-box {
+    display: flex;
+    margin: 40px 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #82BDE5;
+}
+/* 新闻框内的日历样式 */
+.news-calendar {
+    width: 115px;
+    text-align: center;
+    border: 1px solid #82BDE5;
+    margin: 0 35px 0 15px;
+}
+.news-calendar .day {
+    font-size: 35px;
+    font-weight: bold;
+    color: #82BDE5;
+}
+.news-calendar .month {
+    font-size: 25px;
+    font-weight: 400;
+    background: #82BDE5;
+    color: #fff;
+    padding: 10px 0;
+}
+/* 新闻框中文字内容 */
+.news-content h4 {
+    margin: 10px 0;
+    font-family: Charmonman;
+}
+.news-content p {
+    font-size: 13px;
+    margin: 3px 0;
+}

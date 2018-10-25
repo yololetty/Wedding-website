@@ -1,0 +1,108 @@
+
+
+/* 每个图片的动态效果，鼠标移入图片下面的文字会移上去 */
+/* 鼠标进入图片框内 */
+.grid-item:hover .desc-box {
+    display: block;
+}
+
+/* 鼠标移入时详情的内容 */
+.grid-item .img-content {
+	position: relative;
+	cursor: pointer;
+}
+.desc-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    color: #fff;
+}
+.desc-box .desc-contents {
+	position: absolute;
+	bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.desc-contents .desc-item
+{
+    /* font-style: italic; */
+	font-size: 0.8em;
+	font-weight: 100;
+}
+.desc-contents .btn-event {
+	width: 100%;
+	min-width: 48%;
+	/* max-width: 48%; */
+	height: auto;
+	padding: 8px 0;
+	margin: 6px 0;
+	font-size: 0.8em;
+	z-index: 50;
+}
+/* 最后一栏按钮栏 */
+.btn-event ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.btn-event li {
+	display: flex;
+	align-items: center;
+}
+.btn-event > ul > li:last-child {
+	position: relative;
+}
+.heart {
+	background: url(../img/heart_animation.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	background-size:2900%;
+	top: -12px;
+}
+
+.heart:hover, .heart:focus{
+background-position: right;
+}
+
+@-webkit-keyframes heartBlast {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+@keyframes heartBlast {
+	0% {
+		background-position: left;
+	}
+	100% {
+		background-position: right;
+	}
+}
+
+.heartAnimation {
+	display: inline-block;
+	-webkit-animation-name: heartBlast;
+	animation-name: heartBlast;
+	-webkit-animation-duration: .8s;
+	animation-duration: .8s;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: steps(28);
+	animation-timing-function: steps(28);
+	background-position: right;
+}

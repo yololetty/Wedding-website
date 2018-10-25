@@ -1,0 +1,345 @@
+/* 上下栏中下栏位置 */
+#sectionpageunderpage {
+    width: 100%;
+}
+#sectionpage::before,
+#sectionpage::after {
+    content: "";
+    display: table;
+}
+#sectionpage::after {
+    clear: both;
+}
+/* 中间自适应部分 */
+#sectionpage {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 视频总样式 */
+.video-container {
+    margin-top: 50px;
+}
+/* 查看更多 */
+.vmore {
+    display: flex;
+    /* 垂直居中 */
+    align-items: center;
+    /* 内容水平居右 */
+    justify-content: flex-end;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 50px;
+}
+.vmore i {
+    background: url("../img/index/icon-viewmore.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+/* 视频框样式 */
+.video-box {
+    display: flex;
+    justify-content: center; 
+    /* text-align: center */
+}
+.video {
+    padding: 0 10px;
+}
+.video-bg {
+    position: relative;
+    width: 350px;
+    height: 215px;
+    background-color: #fff;
+}
+/* 每个视频框加载图片 */
+#first-video {
+    background-image: url("../img/index/video-bg1.jpg");
+}
+#second-video {
+    background-image: url("../img/index/video-bg2.jpg");
+}
+#third-video {
+    background-image: url("../img/index/video-bg3.jpg");
+}
+/* 视频框鼠标触发 */
+.video-bg {
+    cursor: pointer;
+}
+
+.video-bg:hover .playbutton {
+    top: 37%;
+    left: 40%;
+}
+.video-bg:hover i {
+    background: url("../img/index/icon-video-hover.png") no-repeat;
+    width:88px;
+    height: 88px;
+}
+/* 视频框内播放键 */
+.video-bg i {
+    background: url("../img/index/icon-video.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+/* 播放键基于视频右下角 */
+.playbutton {
+    position: absolute;
+    top: 78%;
+    right: 3%;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    transition: all 0.5s linear;
+}
+/* 视频框内h4样式 */
+.video h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/* 活动推荐 */
+.activity {
+    margin-top: 50px;
+    text-align: center;
+}
+/* 业务样式 */
+.option {
+    margin-top: 100px;
+    text-align: center;
+}
+.title {
+    margin-bottom: 50px;
+}
+.title .vmore{
+    margin-top: -45px;
+}
+.t-box {
+    display: flex;
+    flex-direction: column;
+    /* 垂直居中 */
+    align-items: center;
+    /* 内容水平居右 */
+    justify-content: center;
+}
+.t-box h2 {
+    z-index: 5;
+}
+.t-box .t-yellow {
+    width: 210px;
+    height: 20px;
+    background-color: #E3A36B;
+    margin-top: -15px;
+    /* margin-left: 403px; */
+}
+/* 婚礼礼服 */
+/*轮播样式ʽ*/
+.poster-main {
+    position: relative;
+    width: 900px;
+    height: 270px;
+    margin: 0 auto;
+}
+.poster-main a,.poster-main img {
+    display:block;
+}
+.poster-main .poster-list {
+    width: 900px;
+    height: 270px
+}
+.poster-main .poster-list .poster-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.poster-main .poster-btn{
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    width:180px !important;
+    height:470px !important;
+    text-align: center;
+    line-height: 14px;
+    color: #ffffff;
+    background:url("../img/index/btn_l.png") no-repeat center;
+   /* background-color: #feb320;*/
+    /*opacity: 0.2;*/
+    z-index: 10;
+}
+.poster-main .poster-next-btn{
+    background:url("../img/index/btn_r.png") no-repeat center;
+}
+.btn-box{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .index-btn{
+    display: inline;
+    cursor: pointer;
+    float: left;
+    width: 10px;
+    height: 10px;
+    color: #fff;
+    margin-right: 5px;
+    margin-top: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #feb320;
+} */
+.poster-main .poster-prev-btn{
+    left: 0;
+}
+.poster-main .poster-next-btn{
+    right: 0;
+}
+.index-btn.poster-btn-active{
+    width: 40px;
+    border-radius: 50px;
+    background-color: #9FC112;
+}
+/* 场地展示 */
+#site {
+    margin-top: 70px;
+}
+/* 场地选择栏 */
+/* 水平滑动tab选项卡 */
+.tabs .events {
+    display: none;
+    clear: both;
+}
+.tabs .selectline {
+    display: flex;
+    justify-content: center;
+}
+.tabs .selectline li {
+    float: left;
+    width: 130px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin: 0 35px;
+}
+.tabs .selectline li:hover {
+    border-bottom: 5px solid #E3A36B;
+}
+.tabs .selectline li.selected {
+    border-bottom: 5px solid #E3A36B;
+}
+/* 轮播图栏 */ 
+/* 水平滑动查看图片 */
+.silder-box {
+    position: relative;
+    margin: 50px auto 0;
+    width: 100%;
+}
+.silder {
+    margin-left: 87px;
+}
+.silder li {
+    width: 240px;
+    height: 250px;
+}
+.silder li img {
+    width: 100%;
+    height: 100%;
+}
+.img-box h4 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.silder-button {
+    top: 80px;
+    width: 34px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+.silder-button.btl { 
+    left: 10px;
+    background: url("../img/index/btn_l.png");
+}
+.silder-button.btr {
+    right: 10px;
+    background: url("../img/index/btn_r.png");
+}
+
+/* 风格选择 */
+#style {
+    margin-top: 100px;
+}
+#style .row {
+    justify-content: space-around;
+}
+/* 响应式格式 */
+@media screen and (min-width:576px) {
+    .img-wrap {
+        max-width: 40%;
+    }
+}
+#style .o-container {
+    margin-top: 140px;
+}
+/* 图片大小 */
+.img-wrap .style-img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.img-content {
+    cursor: pointer;
+}
+/* 鼠标进入图片框内 */
+.img-content:hover .desc-box {
+    display: block;
+}
+/* 鼠标移入时详情的内容 */
+.img-wrap .img-content {
+    position: relative;
+}
+.desc-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    color: #fff;
+}
+.desc-box .desc-contents {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.desc-contents .desc-style,
+.desc-contents .desc-author {
+    font-size: 1.2em;
+}
+.desc-contents .desc-by {
+    font-style: italic;
+    font-size: 1em;
+}
+/* 图片的移动 */
+.top {
+    transition: margin 0.5s linear;
+    margin-top: -100px;
+}
+.bottom {
+    transition: margin 0.5s linear;
+}
+.top:hover {
+    margin-top: -20px;
+}
+.bottom:hover {
+    margin-top: -75px;
+}

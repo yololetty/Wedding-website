@@ -1,0 +1,69 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ol,ul{list-style:none;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover, a:active {
+    outline-width: 0;
+    text-decoration: none;
+    color: inherit
+}
+/*设置引入的高宽*/
+.my_header{
+    width:100%;
+    height: 700px;
+}
+.my_footer{
+    width:100%;
+    height:300px
+}
+html,
+body {
+    width: 100%;
+    /* overflow-x: visible; */
+    background-color: #fff;
+}
+html { 
+    font-family: sans-serif;
+    overflow-x:hidden; 
+}
+body {
+    font-family: "Roboto","Avenir Next", 'Helvetica Neue', 'Lato', 'Segoe UI',Avenir,Helvetica,Arial,sans-serif; 
+}
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* 红色按钮 */
+.btn-red {
+    background-color: #d9534f;
+    border-bottom: 5px solid #c9302c;
+}
+.btn-red:hover {
+    background-color: #df6764;
+    color: #eee;
+}
+.btn-purple {
+    background-color: #763aa2; 
+	border-radius: 4px;
+}
+.btn-purple:hover {
+	background-color: #8441b5;
+}
+/* icon图标样式 */
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}

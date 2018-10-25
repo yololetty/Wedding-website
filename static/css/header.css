@@ -1,0 +1,118 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #696969;
+}
+/* 固定头在顶部 */
+/* .navbar-fixed {
+    width: 100%;
+    height: 80px;
+    line-height: 20px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    text-align: right;
+} */
+#header nav {
+    padding: 0 !important;
+    height: 80px;
+}
+.header-nav {
+    background: #fff;
+}
+/* .navbar-fixed::before,
+.navbar-fixed::after {
+    content: "";
+    display: table;
+} */
+/* 导航栏 */
+/* logo */
+.logo {
+    margin-bottom: 8px;
+}
+.logo a {
+    padding: 0;
+    margin: 0;
+}
+/* 具体菜单栏 */
+#nav-menu {
+    text-align: center;
+    height: 80px;
+    margin: 0 auto;
+    margin-left: 120px;
+}
+#menu-box {
+    height: 80px;
+    margin: 0 auto;
+}
+#menu-box > li {
+    height: 80px;
+    width: 108px;
+    cursor: pointer;
+
+}
+#menu-box > li > a {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav-link > span {
+    font-weight: 300;
+    font-size: 12px;
+}
+#menu-box > li:hover,
+.active {
+    color: #d9534f;
+    /* color: #FCF7F7; */
+}
+#menu-box > li:hover a {
+    color: #d9534f;
+}
+/* 首页主图 */
+.homepage {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)),url("../img/header/banner1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    color: #fff;
+    margin-top: 80px;
+    width: 100%; 
+    height: 530px;
+    position: relative;
+}   
+.homepage::before {
+    content: "";
+    display: table;
+}
+.homepage-plan {
+    margin-top: 250px;
+    text-align: center;
+}
+/* 完美婚礼字体 */
+.homepage-plan h1 {
+    font-size: 50px;
+    text-shadow: -1px 1px 5px #434d62, 1px 1px 5px #434d62;
+}
+/* 策划按钮 */
+.homepage-actions a {
+    margin: 30px 15px 0 15px;
+    width: 250px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    
+}
+
+/* 策划图标 */
+.homepage-actions i {
+    display: inline-block;
+    background: url("../img/header/icon-plan.svg") no-repeat;
+    width: 50px;
+    height: 35px;
+}

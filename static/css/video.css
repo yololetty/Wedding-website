@@ -1,0 +1,177 @@
+/* 首页主图 */
+.video-wrap {
+    background-color: #eee;
+    color: #fff;
+    position: relative;
+    margin-top: 80px;
+    width: 100%; 
+    height: 600px;
+    line-height:1;
+    overflow: hidden;
+    text-align: center;
+}   
+.video-wrap::before {
+    content: "";
+    display: table;
+}
+/* 背景视频 */
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.video-bg .play {
+    /* width: 100%; */
+    min-width: 100%;
+    height: 100%;
+    margin-top: 0;
+    object-fit: fill;
+    /* background-color: #eee; */
+}
+.video-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,0,0,.3);
+}
+/* 完美婚礼字体 */
+.video-content h1 {
+    /* font-family: Mali;
+    font-family: Charmonman;
+    font-family: "Indie Flower"; */
+    /* font-family: Lobster; */
+    /* font-family: Pacifico;
+    font-family: "Dancing Script";
+    font-family: "Gloria Hallelujah";
+    font-family: "Great Vibes";
+    font-family:'Satisfy';
+    font-family:'Courgette';
+    font-family:'Kaushan Script'; */
+    font-family:'Parisienne';
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 250px;
+    text-shadow: -1px 1px 5px #434d62, 1px 1px 5px #434d62;
+}
+/* 策划按钮 */
+.video-actions a {
+    margin: 30px 15px 0 15px;
+    width: 250px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 18px;
+    
+}
+/* 主要内容部分 */
+.section {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+/* 视频库 */
+#video-box {
+    margin-top: 70px;
+    margin-left: 20px;
+}
+/* 视频库标题 */
+.video-title {
+    font-family: "Indie Flower";
+}
+.video-title h3 {
+    display: inline-block;
+    width: 215px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #333;
+    font-weight: bold;
+}
+.video-title span {
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 20px;
+}
+/* 视频库内容 */
+.single-video {
+    padding: 0;
+}
+.single-video-wrap {
+    width: 270px;
+    height: 189px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+}
+.video-preview {
+    width: 270px;
+    height: 152px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+/* 图片部分 */
+.single-video-img {
+    height: 100%;
+    background: #e3e4e5;
+}
+.video-img {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+/* 视频部分 */
+.video-item {
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 7;
+    /* transition: display .5s ease; */
+}
+/* 描述内容部分 */
+.single-video-duration {
+    width: 100%;
+    line-height: 37px;
+    height: 37px;
+    background: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 152px;
+}
+/* 隐藏描述部分 */
+.single-video-intro {
+    height: 0;
+    line-height: 20px;
+    padding: 14px;
+    position: absolute;
+    top: 0px;
+    visibility: hidden;
+    left: 0;
+    background: #fff;
+    color: #333;
+    font-weight: 300;
+    opacity: 0;
+    font-size: 12px;
+    transition: opacity .5s ease;
+}
+/* 当hover到父元素时显示隐藏描述内容 */
+.single-video-wrap:hover .single-video-intro {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    /* width: 100%; */
+    z-index: 10;
+    top: 153px;
+    transition: opacity .5s ease;
+    box-shadow: 0 0 8px 0 rgba(0,0, 0, 0.1);
+}
